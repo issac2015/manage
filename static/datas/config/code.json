@@ -1,0 +1,49 @@
+{
+    "treeview": {
+        "icon": "fa fa-file-code-o",
+        "span": "相关代码",
+        "anchor_dom": "fs-code"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-code",
+            "span": "相关代码",
+            "id": "codeTheme",
+            "url": "/admin/code/theme.html"
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "HTML5"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "postMessage",
+                    "id": "html5_postMessage",
+                    "url": "/admin/code/HTML5/postMessage/postMessage.html"
+                }
+            ]
+        },
+        {
+            "icon": "fa fa-code",
+            "span": "iframe",
+            "id": "code_iframe",
+            "url": "/admin/code/iframe/iframe1.html"
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "IE9 以下"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "版本检测",
+                    "id": "code_IE_version",
+                    "url": "/admin/code/under_IE9/index.html"
+                }
+            ]
+        }
+    ]
+}

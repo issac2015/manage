@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown编辑器</title>
+    <link rel="stylesheet" type="text/css" href="/admin/static/css/normalize.css">
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="header" class="text-center">MarkDown 解析器示例</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 col-md-6">
+                <textarea id="md" class="form-control"  placeholder="请输入Markdown代码"></textarea>
+            </div>
+            <div id="html" class="col-lg-6 col-sm-6 col-md-6"></div>
+        </div>
+    </div>
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/static/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/static/plugin/marked/marked.js"></script>
+    <script src="index.js"></script>
+</html>

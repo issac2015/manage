@@ -1,0 +1,51 @@
+{
+    "treeview": {
+        "icon": "fa fa-puzzle-piece",
+        "span": "前端组件",
+        "anchor_dom": "fs-webplugin"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-spinner",
+            "span": "加载动画",
+            "id": "loading",
+            "url": "/admin/loading/index.html"
+        },
+        {
+            "icon": "fa fa-cloud-upload",
+            "span": "上传组件",
+            "id": "fsUpload",
+            "url": "/admin/webplugin/fs_upload/upload.html"
+        },
+        {
+            "icon": "fa fa-cloud-upload",
+            "span": "bootstrap-fileinput",
+            "id": "fsBTFileinput",
+            "url": "/admin/webplugin/fs_upload/bootstrap_fileinput/index.html"
+        },
+        {
+            "icon": "fa fa-bookmark-o",
+            "span": "web 弹出层",
+            "id": "fsAlert",
+            "url": "/admin/webplugin/fs_alert/index.html"
+        },
+        {
+            "icon": "fa fa-connectdevelop",
+            "span": "sweetalert 兼容IE8",
+            "id": "fsSwal",
+            "url": "/admin/webplugin/fs_alert/sweetalert.html"
+        },
+        {
+            "icon": "fa fa-user-circle",
+            "span": "登录界面",
+            "id": "fsHomepageLG",
+            "url": "/admin/login/homepage/index.html"
+        },
+        {
+            "icon": "fa fa-spinner",
+            "span": "加载动画",
+            "id": "loading",
+            "url": "/admin/loading/index.html"
+        }
+    ]
+}

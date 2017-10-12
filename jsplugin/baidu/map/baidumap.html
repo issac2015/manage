@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta name="keywords" content="金财互联,税务，广州金财互联税务顾问有限公司，税务顾问" />
+    <meta name="description" content="广州金财互联税务顾问有限公司" />
+    <title>广州金财互联税务顾问有限公司</title>
+    <!--引用百度地图API-->
+    <style type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #dituContent {
+        width:100%;
+        min-height: 600px;
+    }
+    .iw_poi_title {
+        color: #CC5522;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        padding-right: 13px;
+        white-space: nowrap
+    }
+    .iw_poi_content {
+        font: 12px arial, sans-serif;
+        overflow: visible;
+        padding-top: 4px;
+        white-space: -moz-pre-wrap;
+        word-wrap: break-word
+    }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+    <!--百度地图容器-->
+    <div id="dituContent"></div>
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/jsplugin/baidu/map/map.js"></script>
+    <script type="text/javascript">
+        $("body", parent.document).removeClass("sidebar-collapse");
+        $("body", parent.document).addClass("sidebar-collapse"); // 收起工具栏
+        // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+
+        $("#fsBaiduMap", parent.document).height(setHeightVal);
+        $("#dituContent").height(verify);
+    });
+    </script>
+</html>

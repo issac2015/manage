@@ -1,0 +1,125 @@
+/*::-webkit-scrollbar {
+   width: 1em;
+}*/
+
+/* For the "inset" look only */
+
+/*html {
+    overflow: auto;
+}
+body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}*/
+
+/* Let's get this party started */
+
+/* 这是针对缺省样式 (必须的) */
+
+/*::-webkit-scrollbar {
+    width: 12px;
+}*/
+
+/* Track */
+
+/* 滚动条的滑轨背景颜色 */
+
+/*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}*/
+
+/* Handle */
+
+/* 滑块颜色 */
+
+/*::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
+}*/
+
+/* 滑轨两头的监听按钮颜色 */
+
+/*::-webkit-scrollbar-button {
+    background-color: #7c2929;
+} */
+
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+/*::-webkit-scrollbar-corner {
+    background-color: black;
+} */
+
+/*.container {
+    width: 300px;
+    height: 300px;
+    background-color: #DCDCDC;
+    overflow: scroll; 
+}*/
+
+/*.dark .container {
+    overflow: hidden; 
+}*/
+
+/* 结束 */
+
+.skin-blue .sidebar-menu .treeview-menu a {
+    cursor: pointer;
+}
+
+
+
+.fs-content-iframe { border: 0px; width: 100%; min-height: 600px; display: none; }
+iframe.active { display: block; }
+
+/* 右键标签的样式 */
+#rightBtnDiv { border-radius: 6px;position: absolute; display: none; z-index: 9999;    /*background: white;*/ background: rgba(236, 240, 245, 0.76); border: 0px; padding: 0px; list-style: none; }
+#rightBtnDiv li {
+    height: 33px;
+}
+#rightBtnDiv li div { text-align: center; margin: 5px 10px; font-size: 16px;float: left; }
+#rightBtnDiv li div a { color: black; }
+#rightBtnDiv li div a i.fa-refresh {
+    padding-right: 10px;
+}
+#rightBtnDiv li div a i.fa-spinner {
+    padding-right: 9px;
+}
+#rightBtnDiv li div a i.fa-toggle-on {
+    padding-right: 4px;
+}
+
+/* 个别页面样式的处理 start */
+#fsResume {
+    min-height: 1300px;
+}
+
+
+/* 个别页面样式的处理 end */
+
+/* 修改总页面样式 start */
+.content-wrapper {
+    background-color: white;
+}
+#fsIframe {
+    padding-bottom: 0px;
+}
+.sidebar .sidebar-menu .treeview-menu>li>a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 修改总页面样式 end */

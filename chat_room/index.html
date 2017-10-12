@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LayIM测试</title>
+	<link rel="stylesheet" href="/admin/chat_room/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/admin/chat_room/static/css/index.css">
+</head>
+<body>
+	
+	
+</body>
+	<script src="/admin/chat_room/static/js/jquery.1.10.2.min.js"></script>
+	<script src="/admin/chat_room/layui/layui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+	<script src="/admin/static/js/common.js"></script>
+	<script src="/admin/chat_room/static/js/index.js"></script>
+	
+	<script type="text/javascript">
+
+    // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+
+        $("#chat_room", parent.document).height(setHeightVal);
+    });
+    </script>
+</html>

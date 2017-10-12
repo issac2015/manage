@@ -1,0 +1,50 @@
+[
+    {
+        "name": "F:\\1software",
+        "open": true,
+        "iconOpen": "/admin/static/plugin/ztree/css/img/diy/1_open.png", 
+        "iconClose": "/admin/static/plugin/ztree/css/img/diy/1_close.png",
+        "children": [
+            {
+                "name": "video -- 影视工具",
+                "open": true,
+                "children": [
+                    {
+                        "name": "gif录制工具",
+                        "open": true,
+                        "children": [
+                            { "name": "FastStoneCapture" },
+                            { "name": "LICEcap" }
+                        ]
+                    },
+                    {
+                        "name": "huishenghuiying_x8 -- 绘声绘影"
+                    }
+                ]
+            },
+            {
+                "name": "wechat_dev -- 微信开发工具"
+            }
+        ]
+    },
+    {
+        "name": "F:\\1document",
+        "open": true,
+        "iconOpen": "/admin/static/plugin/ztree/css/img/diy/1_open.png", 
+        "iconClose": "/admin/static/plugin/ztree/css/img/diy/1_close.png",
+        "children": [
+            {
+                "name": "Android -- 安卓",
+                "open": true,
+                "children": [
+                    {
+                        "name": "androidStudio"
+                    },
+                    {
+                        "name": "sdk"
+                    }
+                ]
+            }
+        ]
+    }
+]

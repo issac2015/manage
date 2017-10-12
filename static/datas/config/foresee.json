@@ -1,0 +1,26 @@
+{
+    "treeview": {
+        "icon": "fa fa-grav",
+        "span": "页面"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-table",
+            "span": "无法访问页面",
+            "id": "cannotAccess",
+            "url": "/admin/foresee/页面/index.html"
+        },
+        {
+            "icon": "fa fa-tree",
+            "span": "无法访问页面 2",
+            "id": "cannotAccess2",
+            "url": "/admin/foresee/页面/index2.html"
+        },
+        {
+            "icon": "fa fa-tree",
+            "span": "无法访问页面 3",
+            "id": "cannotAccess3",
+            "url": "/admin/foresee/页面/index3.html"
+        }
+    ]
+}

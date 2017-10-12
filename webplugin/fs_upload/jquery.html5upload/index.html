@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+    <link rel="stylesheet" type="text/css" href="./html5uploader.css"/>
+</head>
+<body>
+    <div id="upload"></div>
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="./jquery.html5uploader.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#upload').html5uploader({
+                auto:false,
+                multi:true,
+                removeTimeout:9999999,
+                url:'upload.php',
+                onUploadStart:function(){
+                    alert('开始上传');
+                    },
+                onInit:function(){
+                    alert('初始化');
+                    },
+                onUploadComplete:function(){
+                    alert('上传完成');
+                    }
+            });
+        });
+    </script>
+</html>

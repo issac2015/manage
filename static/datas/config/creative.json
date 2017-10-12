@@ -1,0 +1,56 @@
+{
+    "treeview": {
+        "icon": "fa fa-heartbeat",
+        "span": "创意作品"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-heart-o",
+            "span": "love",
+            "id": "fsLove",
+            "url": "/admin/creative/love/index.html"
+        },
+        {
+            "icon": "fa fa-calendar-check-o",
+            "span": "日历 - 记事",
+            "id": "fsCalendar",
+            "url": "/admin/creative/calendar_with_event/index.html"
+        },
+        {
+            "icon": "fa fa-american-sign-language-interpreting",
+            "span": "中国象棋",
+            "id": "fsCHChess",
+            "url": "/admin/creative/ChineseChess/index.html"
+        },
+        {
+            "icon": "fa fa-clock-o",
+            "span": "圆挂钟",
+            "id": "fsCirClock",
+            "url": "/admin/creative/circle_clock/index.html"
+        },
+        {
+            "icon": "fa fa-calendar-check-o",
+            "span": "水果忍者",
+            "id": "fsFruitNinja",
+            "url": "/admin/creative/game_fruit_ninja/index.html"
+        },
+        {
+            "icon": "fa fa-calendar-check-o",
+            "span": "svg 鲸鱼",
+            "id": "fsSvgWhale",
+            "url": "/admin/creative/whale/index.html"
+        },
+        {
+            "icon": "fa fa-calendar-check-o",
+            "span": "dot_canvas",
+            "id": "fsDotCanvas",
+            "url": "/admin/creative/dot_canvas/index.html"
+        },
+        {
+            "icon": "fa fa-calendar",
+            "span": "中国日历",
+            "id": "fsLunar",
+            "url": "/admin/creative/lunar_calendar/index.html"
+        }
+    ]
+}

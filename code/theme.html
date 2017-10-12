@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeMirror: Theme Demo</title>
+    <link rel=stylesheet href="/admin/static/plugin/code_mirror/doc/docs.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/lib/codemirror.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/3024-day.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/3024-night.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/abcdef.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/ambiance.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/base16-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/bespin.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/base16-light.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/blackboard.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/cobalt.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/colorforth.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/dracula.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/duotone-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/duotone-light.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/eclipse.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/elegant.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/erlang-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/hopscotch.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/icecoder.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/isotope.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/lesser-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/liquibyte.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/material.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/mbo.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/mdn-like.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/midnight.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/monokai.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/neat.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/neo.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/night.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/panda-syntax.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/paraiso-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/paraiso-light.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/pastel-on-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/railscasts.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/rubyblue.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/seti.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/solarized.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/the-matrix.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/tomorrow-night-eighties.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/ttcn.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/twilight.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/vibrant-ink.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/xq-dark.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/xq-light.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/yeti.css">
+    <link rel="stylesheet" href="/admin/static/plugin/code_mirror/theme/zenburn.css">
+    <style type="text/css">
+        .CodeMirror {
+            border: 1px solid black;
+            min-width: 800px;
+            font-size: 20px;
+            min-height: 440px;
+        }
+        article {
+            max-width: 100%!important;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h2>代码展示示例</h2>
+        <form>
+            <textarea id="code" name="code">
+function findSequence(goal) {
+  function find(start, history) {
+    if (start == goal)
+      return history;
+    else if (start > goal)
+      return null;
+    else
+      return find(start + 5, "(" + history + " + 5)") ||
+             find(start * 3, "(" + history + " * 3)");
+  }
+  return find(1, "1");
+}
+            </textarea>
+        </form>
+        <p>Select a theme:
+            <select onchange="selectTheme()" id="select">
+                <option>default</option>
+                <option>3024-day</option>
+                <option>3024-night</option>
+                <option>abcdef</option>
+                <option>ambiance</option>
+                <option>base16-dark</option>
+                <option>base16-light</option>
+                <option>bespin</option>
+                <option>blackboard</option>
+                <option>cobalt</option>
+                <option>colorforth</option>
+                <option>dracula</option>
+                <option>duotone-dark</option>
+                <option>duotone-light</option>
+                <option>eclipse</option>
+                <option>elegant</option>
+                <option>erlang-dark</option>
+                <option>hopscotch</option>
+                <option>icecoder</option>
+                <option>isotope</option>
+                <option>lesser-dark</option>
+                <option>liquibyte</option>
+                <option>material</option>
+                <option>mbo</option>
+                <option>mdn-like</option>
+                <option>midnight</option>
+                <option selected>monokai</option>
+                <option>neat</option>
+                <option>neo</option>
+                <option>night</option>
+                <option>panda-syntax</option>
+                <option>paraiso-dark</option>
+                <option>paraiso-light</option>
+                <option>pastel-on-dark</option>
+                <option>railscasts</option>
+                <option>rubyblue</option>
+                <option>seti</option>
+                <option>solarized dark</option>
+                <option>solarized light</option>
+                <option>the-matrix</option>
+                <option>tomorrow-night-bright</option>
+                <option>tomorrow-night-eighties</option>
+                <option>ttcn</option>
+                <option>twilight</option>
+                <option>vibrant-ink</option>
+                <option>xq-dark</option>
+                <option>xq-light</option>
+                <option>yeti</option>
+                <option>zenburn</option>
+            </select>
+        </p>
+    </article>
+
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/static/plugin/code_mirror/lib/codemirror.js"></script>
+    <script src="/admin/static/plugin/code_mirror/mode/javascript/javascript.js"></script>
+    <script src="/admin/static/plugin/code_mirror/addon/selection/active-line.js"></script>
+    <script src="/admin/static/plugin/code_mirror/addon/edit/matchbrackets.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            lineNumbers: true,
+            styleActiveLine: true,
+            theme: "monokai",
+            matchBrackets: true
+        });
+        // console.log(editor);
+
+        var input = document.getElementById("select");
+
+        function selectTheme() {
+            var theme = input.options[input.selectedIndex].textContent;
+            editor.setOption("theme", theme);
+            location.hash = "#" + theme;
+        }
+        var choice = (location.hash && location.hash.slice(1)) ||
+            (document.location.search &&
+                decodeURIComponent(document.location.search.slice(1)));
+        if (choice) {
+            input.value = choice;
+            editor.setOption("theme", choice);
+        }
+        CodeMirror.on(window, "hashchange", function() {
+            var theme = location.hash.slice(1);
+            if (theme) {
+                input.value = theme;
+                selectTheme();
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        // 动态设置 iframe 内嵌的高度
+        $(document).ready(function () {
+            var setHeightVal = $(document).height() + 30;
+            $("#codeTheme", parent.document).height(setHeightVal);
+        });
+    </script>
+</html>

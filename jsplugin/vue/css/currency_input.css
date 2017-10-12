@@ -1,0 +1,12 @@
+#app {
+    margin: auto;
+    width: 800px;
+    margin-top: 20px;
+}
+#app div {
+    margin-bottom: 20px;
+}
+input.form-control {
+    width: 200px;
+    display: inline-block;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap-fileinput</title>
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/webplugin/fs_upload/bootstrap_fileinput/css/fileinput.css" media="all">
+    <link rel="stylesheet" href="/admin/webplugin/fs_upload/bootstrap_fileinput/index.css">
+</head>
+<body>
+    <h3>An enhanced <em> HTML 5 file input </em> for Bootstrap 3.x with file preview, multiple selection, and more features.</h3>
+    <h4>IE9+ , 不支持 IE9</h4>
+    <!-- <label class="control-label">行星 和 卫星</label>
+    <input id="input-24" name="thumbnail" type="file" multiple class="file-loading"> -->
+    <label class="control-label">Select File</label>
+    <input id="input-44" name="thumbnail" type="file" multiple class="file-loading">
+
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <!-- piexif.js is only needed if you wish to resize images before upload to restore exif data.
+     This must be loaded before fileinput.js -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/js/plugins/piexif.js" type="text/javascript"></script>
+    <!-- sortable.js is only needed if you wish to sort / rearrange files in initial preview.
+         This must be loaded before fileinput.js -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/js/plugins/sortable.js" type="text/javascript"></script>
+    <!-- purify.js is only needed if you wish to purify HTML content in your preview for HTML files.
+         This must be loaded before fileinput.js -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/js/plugins/purify.js" type="text/javascript"></script>
+    <!-- the main fileinput plugin file -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/js/fileinput.js"></script>
+    <!-- bootstrap.js below is needed if you wish to zoom and view file content 
+         in a larger detailed modal dialog -->
+    <script src="/admin/static/plugin/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- optionally if you need a theme like font awesome theme you can include 
+        it as mentioned below -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/themes/fa/theme.js"></script>
+    <!-- optionally if you need translation for your language then include 
+        locale file as mentioned below -->
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/js/js/locales/zh.js"></script>
+    <script src="/admin/webplugin/fs_upload/bootstrap_fileinput/index.js"></script>
+    <script type="text/javascript">
+        $("body", parent.document).removeClass("sidebar-collapse");
+        $("body", parent.document).addClass("sidebar-collapse"); // 收起工具栏
+        // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+        // 自定义高度
+        setHeightVal = 760;
+        $("#fsBTFileinput", parent.document).height(setHeightVal);
+    });
+    </script>
+</html>

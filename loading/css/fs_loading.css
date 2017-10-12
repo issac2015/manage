@@ -1,0 +1,18 @@
+.fs-loading { position: absolute; left: 0px; right: 0px; top: 0px; width: 100%; height: 100%; background: none; box-shadow: none; border: none; }
+/* fs-load 默认显示的gif；如果用户输入的类型不对也会播放它 */
+.fs-load { width: 260px; height: 68px; background: url(/demo/static/img/loading0.gif) no-repeat; margin: auto; position: absolute; left: 0px; right: 0px; top: 20px; }
+.fs-loading .fs-load-0 { width: 260px; height: 68px; background: url(/demo/static/img/loading0.gif) no-repeat; }
+.fs-loading .fs-load-1 { width: 37px; height: 37px; background: url(/demo/static/img/loading1.gif) no-repeat; }
+.fs-loading .fs-load-2 { width: 32px; height: 32px; background: url(/demo/static/img/loading2.gif) no-repeat; }
+.fs-loading .fs-load-3 { width: 300px; height: 300px; background: url(/demo/static/img/loading3.gif) no-repeat; }
+.fs-loading .fs-load-4 { width: 500px; height: 270px; background: url(/demo/static/img/loading4.gif) no-repeat; }
+.fs-loading .fs-load-5 { width: 335px; height: 266px; background: url(/demo/static/img/loading5.gif) no-repeat; }
+.fs-loading .fs-load-6 { width: 402px; height: 300px; background: url(/demo/static/img/loading6.gif) no-repeat; }
+.fs-loading .fs-load-7 { width: 250px; height: 200px; background: url(/demo/static/img/loading7.gif) no-repeat; }
+.fs-loading .fs-load-8 { width: 70px; height: 70px; background: url(/demo/static/img/loading8.gif) no-repeat; }
+/* 清除浮动 */
+.fs-clearfix { clear: both; content: ""; display: block; height: 0; line-height: 0; font-size: 0; }
+/* 居中 */
+.fs-loading-center .fs-load { top: 20%; }
+/* 遮掩层 */
+.fs-cover-layer { position: absolute; width: 100%; height: 100%; top: 0px; background-color: white; opacity: 0.5; }

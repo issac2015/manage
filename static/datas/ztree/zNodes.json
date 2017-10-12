@@ -1,0 +1,73 @@
+[
+    {
+        "name": "运动",
+        "open": true,
+        "iconOpen": "/admin/static/plugin/ztree/css/img/diy/1_open.png", 
+        "iconClose": "/admin/static/plugin/ztree/css/img/diy/1_close.png",
+        "children": [
+            {
+                "name": "网球"
+            }, 
+            {
+                "name": "足球"
+            }
+        ]
+    }, 
+    {
+        "name": "学习",
+        "open": false,
+        "children": [
+            {
+                "name": "Python"
+            }, 
+            {
+                "name": "Node.js"
+            },
+            {
+                "name": "PHP"
+            }
+        ]
+    },
+    {
+        "name": "其它事情",
+        "open": true,
+        "children": [
+            {
+                "name": "朋友"
+            }, 
+            {
+                "name": "家人",
+                "open": true,
+                "children": [
+                    {
+                        "name": "弟弟"
+                    },
+                    {
+                        "name": "妹妹"
+                    },
+                    {
+                        "name": "父母"
+                    }
+                ]
+            },
+            {
+                "name": "同事"
+            }
+        ]
+    },
+    {
+        "name": "影视娱乐",
+        "open": true,
+        "children": [
+            {
+                "name": "战狼2"
+            }, 
+            {
+                "name": "权利游戏"
+            },
+            {
+                "name": "我的前半生"
+            }
+        ]
+    }
+]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IE9 以下</title>
+    <link rel="stylesheet" type="text/css" href="/admin/static/css/normalize.css">
+    <style type="text/css">
+        .fs-this-browser span {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 12px;
+            color: red;
+        }
+        .fs-ie-version {
+            margin-top: 10px;
+        }
+        .fs-ie-version div {
+            padding-left: 2em;
+        }
+        .fs-ie-version span {
+            margin-right: 20px;
+        }
+        .fs-ie-version span:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="fs-this-browser">当前浏览器的 name :<span id="this_browser_name"></span>; version: <span id="this_browser_version"></span></div>
+    <div class="fs-ie-version">
+        <span>谷歌浏览器</span>
+        <span>mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36</span>
+        <div>name :webkit; version: 537.36</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 11</span>
+        <span>mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e; rv:11.0) like gecko</span>
+        <div>name :mozilla; version: 11.0</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 10</span>
+        <span>mozilla/5.0 (compatible; msie 10.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e)</span>
+        <div>{name: "msie", version: "10.0"}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 9</span>
+        <span>mozilla/5.0 (compatible; msie 9.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e)</span>
+        <div>{name: "msie", version: "9.0"}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 8</span>
+        <span>mozilla/4.0 (compatible; msie 8.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e)</span>
+        <div>{name: "msie", version: "8.0"}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 7</span>
+        <span>mozilla/4.0 (compatible; msie 7.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e)</span>
+        <div>{name: "msie", version: "7.0"}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>IE 浏览器 5</span>
+        <span>mozilla/4.0 (compatible; msie 7.0; windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e)</span>
+        <div>{name: "msie", version: "7.0"}</div>
+    </div>
+    <div class="fs-ie-version" style="margin-top: 35px"></div>
+    <div class="fs-ie-version">
+        <span>360 兼容模式</span>
+        <span>mozilla/5.0 (windows nt 10.0; wow64; trident/7.0; .net4.0c; .net4.0e; rv:11.0) like gecko</span>
+        <div>{name: "mozilla", version: "11.0"}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>360 极速模式</span>
+        <span>mozilla/5.0 (windows nt 10.0; wow64) applewebkit/537.36 (khtml, like gecko) chrome/55.0.2883.87 safari/537.36</span>
+        <div>{name :webkit; version: 537.36}</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>火狐浏览器</span>
+        <span>mozilla/5.0 (windows nt 10.0; win64; x64; rv:55.0) gecko/20100101 firefox/55.0</span>
+        <div>{ name: "mozilla", version: "55.0" }</div>
+    </div>
+    <div class="fs-ie-version">
+        <span>Microsoft Edge</span>
+        <span>mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/52.0.2743.116 safari/537.36 edge/15.15063</span>
+        <div>{name: "webkit", version: "537.36"}</div>
+    </div>
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.1.12.4.min.js"></script>
+    <script src="/admin/static/js/common.js"></script>
+    <script src="/admin/code/under_IE9/index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var ttty = common.getViewportSize();
+            console.log(ttty);
+        });
+    </script>
+</html>

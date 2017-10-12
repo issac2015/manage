@@ -1,0 +1,124 @@
+{
+    "treeview": {
+        "icon": "fa fa-grav",
+        "span": "js 插件"
+    },
+    "menus": [
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "Web API 接口管理"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "swagger_ui_2",
+                    "id": "swagger_ui_2_2_10",
+                    "url": "/admin/jsplugin/webapi/swagger_ui_2_2_10/index.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "swagger_ui_3",
+                    "id": "swagger_ui_3",
+                    "url": "/admin/jsplugin/webapi/swagger_ui_3/index.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "mock.js",
+                    "id": "mockjs",
+                    "url": "/admin/jsplugin/webapi/mockjs/index.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "mockjs文档",
+                    "id": "mockjs",
+                    "url": "/admin/jsplugin/webapi/mockjs/docs.html"
+                }
+            ]
+        },
+        {
+            "icon": "fa fa-table",
+            "span": "datatables.js",
+            "id": "fsDatatables",
+            "url": "/admin/jsplugin/datatables/index.html"
+        },
+        {
+            "icon": "fa fa-tree",
+            "span": "ztree树形结构",
+            "id": "fsZtree",
+            "url": "/admin/jsplugin/ztree/index.html"
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "sly.js"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "sly滚动条demo",
+                    "id": "fsSly",
+                    "url": "/admin/jsplugin/sly/test.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "sly.js",
+                    "id": "fsSlyIndex",
+                    "url": "/admin/jsplugin/sly/index.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "marked.js"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "Markdown编辑器",
+                    "id": "fs_marked_md",
+                    "url": "/admin/jsplugin/marked/index.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-database",
+                "span": "vue.js"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "Currency Input",
+                    "id": "fsVue",
+                    "url": "/admin/jsplugin/vue/index.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "可复用性reusability",
+                    "id": "fsReusability",
+                    "url": "/admin/jsplugin/vue/html/可复用性.html"
+                }
+            ]
+        },
+        {
+            "icon": "fa fa-map-marker",
+            "span": "百度地图",
+            "id": "fsBaiduMap",
+            "url": "/admin/jsplugin/baidu/map/baidumap.html"
+        },
+        {
+            "icon": "fa fa-clipboard",
+            "span": "富文本编辑器",
+            "id": "fsUeditor",
+            "url": "/admin/jsplugin/baidu/ueditor/index.html"
+        },
+        {
+            "icon": "fa fa-clipboard",
+            "span": "jq mobile 日历",
+            "id": "fsMobiscroll",
+            "url": "https://demo.mobiscroll.com/v3/jquery/calendar/invalid/"
+        }
+    ]
+}

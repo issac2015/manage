@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修复sweetalert IE兼容性问题</title>
+    <link rel="stylesheet" type="text/css" href="sweetalert/sweetalert.css">
+</head>
+<body>
+    
+</body>
+    <script type="text/javascript" src="sweetalert/sweetalert-dev.js"></script>
+    <script type="text/javascript">
+        swal({
+          title: "An input!",
+          text: "Write something interesting:",
+          type: "input",
+          showCancelButton: true,
+          closeOnConfirm: false,
+          animation: "slide-from-top",
+          inputPlaceholder: "Write something"
+        },
+        function(inputValue){
+          if (inputValue === false) return false;
+          
+          if (inputValue === "") {
+            swal.showInputError("You need to write something!");
+            return false
+          }
+          
+          swal("Nice!", "You wrote: " + inputValue, "success");
+        });
+    </script>
+</html>

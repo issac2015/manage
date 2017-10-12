@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Admin | issac</title>
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/admin/static/plugin/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/admin/static/plugin/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/admin/static/plugin/adminlte/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins -->
+    <link rel="stylesheet" href="/admin/static/plugin/adminlte/css/skins/skin-blue.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="/admin/static/plugin/html5shiv/html5shiv.min.js"></script>
+        <script src="/admin/static/plugin/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Font -->
+    <link rel="stylesheet" href="/admin/static/plugin/google/css/google-font.css">
+    <link rel="stylesheet" href="/admin/static/css/index.css">
+</head>
+<!-- 在body中加 sidebar-collapse -->
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <!-- 头部主体 -->
+        <header class="main-header">
+            <!-- 图标 -->
+            <a href="/admin/index2.html" class="logo">
+                <!-- 收缩侧边栏的小图标 50x50 pixels -->
+                <span class="logo-mini"><b>I</b>ssac</span>
+                <!-- 正常状态和手机设备的正常图标 -->
+                <span class="logo-lg"><b>Hello</b> issac</span>
+            </a>
+            <!-- 头部导航栏 -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- 侧边栏触发按钮 -->
+                <a href="/admin/#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">导航条触发器</span>
+                </a>
+                <!-- 右侧菜单 -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- 信息: 样式写在 dropdown.less 文件中 -->
+                        <li class="dropdown messages-menu">
+                            <!-- 展开信息的触发器按钮 -->
+                            <a href="/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">你有 4 条未读信息！</li>
+                                <li>
+                                    <!-- 内部菜单栏: 作用是包含信息 -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- 信息 start -->
+                                            <a href="/admin/#">
+                                                <div class="pull-left">
+                                                    <!-- 用户头像 -->
+                                                    <img title="issac" src="/admin/static/plugin/adminlte/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- 信息的头部 和 时间戳 -->
+                                                <h4>
+                                                    运动
+                                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <!-- 信息正文 -->
+                                                <p>星期六晚去奥体中心跑步。</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <!-- 信息 start -->
+                                            <a href="/admin/#">
+                                                <div class="pull-left">
+                                                    <!-- 用户头像 -->
+                                                    <img title="tom" src="/admin/static/plugin/adminlte/img/avatar04.png" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- 信息的头部 和 时间戳 -->
+                                                <h4>
+                                                    周日早上和下午
+                                                        <small><i class="fa fa-clock-o"></i> 8 mins</small>
+                                                </h4>
+                                                <!-- 信息正文 -->
+                                                <p>跟跑团朋友去爬山（火凤线）</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <!-- 信息 start -->
+                                            <a href="/admin/#">
+                                                <div class="pull-left">
+                                                    <!-- 用户头像 -->
+                                                    <img title="Lisa" src="/admin/static/plugin/adminlte/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- 信息的头部 和 时间戳 -->
+                                                <h4>
+                                                    周日晚吃饭
+                                                        <small><i class="fa fa-clock-o"></i> 8 mins</small>
+                                                </h4>
+                                                <!-- 信息正文 -->
+                                                <p>东圃</p>
+                                            </a>
+                                        </li>
+                                        <!-- 信息 end -->
+                                    </ul>
+                                    <!-- /.menu -->
+                                </li>
+                                <li class="footer"><a href="/admin/#">查看所有信息</a></li>
+                            </ul>
+                        </li>
+                        <!-- /.messages-menu -->
+                        <!-- 通告菜单 -->
+                        <li class="dropdown notifications-menu">
+                            <!-- 展开通告的触发器按钮 -->
+                            <a href="/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">你有 10 条未读的通告！</li>
+                                <li>
+                                    <!-- 内部菜单栏: 作用是包含通告 -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- 通告信息 start -->
+                                            <a href="/admin/#">
+                                                <i class="fa fa-users text-aqua"></i> 今天有 5 个新朋友加入了。
+                                            </a>
+                                        </li>
+                                        <!-- 通告信息 end -->
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="/admin/#">查看通告</a></li>
+                            </ul>
+                        </li>
+                        <!-- 任务菜单 -->
+                        <li class="dropdown tasks-menu">
+                            <!-- 展开任务的触发器按钮 -->
+                            <a href="/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-flag-o"></i>
+                                <span class="label label-danger">9</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">你有 9 个未完成任务</li>
+                                <li>
+                                    <!-- 内部菜单栏: 作用是包含任务 -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- 项目任务 -->
+                                            <a href="/admin/#">
+                                                <!-- 任务头部 和 进度条百分比 -->
+                                                <h3>
+                                                    制作一些页面
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <!-- 进度条 -->
+                                                <div class="progress xs">
+                                                    <!-- 改变这css属性去模拟进度变化 -->
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- 项目任务 end -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="/admin/#">查看所有任务</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 用户账号菜单 -->
+                        <li class="dropdown user user-menu">
+                            <!-- 展开用户账号的触发器按钮 -->
+                            <a href="/admin/#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- 导航栏中用户的图片 -->
+                                <img src="/admin/static/plugin/adminlte/img/myimg.jpg" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">issac</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- 下拉界面的用户头像 -->
+                                <li class="user-header">
+                                    <img src="/admin/static/plugin/adminlte/img/myimg.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        issac - Web Developer
+                                        <small>Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- 菜单 Body -->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center">
+                                            <a href="/admin/#">追随者</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="/admin/#">Sales</a>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <a href="/admin/#">朋友</a>
+                                        </div>
+                                    </div>
+                                    <!-- /.row -->
+                                </li>
+                                <!-- 菜单 脚部-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="/admin/#" class="btn btn-default btn-flat">简况</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="/admin/#" class="btn btn-default btn-flat">退出</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 控制工具条的触发器 -->
+                        <li>
+                            <a href="/admin/#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 左列. 包含图标 和 侧边栏 -->
+        <aside class="main-sidebar">
+            <!-- 侧边栏: 样式发在 sidebar.less 文件中 -->
+            <section class="sidebar">
+                <!-- 侧边栏用户面板(可选) -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="/admin/static/plugin/adminlte/img/myimg.jpg" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>issac</p>
+                        <!-- 在线状态 -->
+                        <a href="/admin/#"><i class="fa fa-circle text-success"></i> 在线</a>
+                    </div>
+                </div>
+                <!-- 搜索 form (可选) -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="搜索...">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- 侧边栏菜单 -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">HEADER</li>
+                    <!-- 随意地, 你可以添加icons 给这些页面链接 -->
+                    <li>
+                        <a class="control-iframe" data-id="chatRoom" data-url="/admin/chat_room/index.html">
+                            <i class="fa fa-weixin" aria-hidden="true"></i>
+                            <span>聊天室</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-music"></i> 
+                            <span>我的音乐</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="control-iframe" data-id="neteaseMusic" data-url="/admin/music/netease/netease.html">
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                    <span>网易音乐</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="control-iframe" data-id="kugouMusic" data-url="/admin/music/kugou/kugou.html">
+                                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                                    <span>酷狗音乐</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-share-alt"></i>
+                            <span>生活点滴</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="control-iframe" data-id="fsLife" data-url="/admin/life_in_pieces/life/index.html">
+                                    <i class="fa fa-skyatlas" aria-hidden="true"></i>
+                                    <span>我的相册</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="control-iframe" data-id="fsResume" data-url="/admin/life_in_pieces/resume/index.html">
+                                    <i class="fa fa-street-view" aria-hidden="true"></i>
+                                    <span>我的简历</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="control-iframe" data-id="fsHome" data-url="/admin/life_in_pieces/home/index.html">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <span>我的主页</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="treeview" data-anchor_dom="fs-code">
+                        <a href="#">
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <span>相关代码</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="control-iframe" data-id="codeTheme" data-id="" data-url="/admin/code/theme.html">
+                                    <i class="fa fa-code" aria-hidden="true"></i>
+                                    <span>相关代码</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="control-iframe" data-url="/admin/music/kugou/kugou.html">
+                                    <i class="fa fa-paw"></i> 
+                                    <span>酷狗音乐</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- 内容包装器 —— 页面容器。包含页面内容 -->
+        <div class="content-wrapper">
+            <!-- 头部内容 (页眉) -->
+            <section class="content-header">
+                <h1>
+                    <span id="conHeaderSpan">My Admin</span>
+                    <small>made by issac.</small>
+                    <!-- <small>描述(可选)</small> -->
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/admin/#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                    <li class="active">Here</li>
+                </ol>
+            </section>
+            <!-- 主要内容 -->
+            <section id="fsIframe" class="content container-fluid">
+                <!-- <iframe name="fsBTFileinput" id="fsBTFileinput" class="fs-content-iframe active" src="/v2_cn_vuejs/index.html"></iframe> -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper 内容包装器 end -->
+        <!-- 页脚 Footer -->
+        <footer class="main-footer">
+            <!-- 浮动到右侧 -->
+            <div id="fsTimeFooter" class="pull-right hidden-xs">
+                2017年7月20日
+            </div>
+            <!-- 默认在左侧 -->
+            <strong>Copyright &copy; 2017 <a href="/admin/#">Author issac </a>.</strong> 保留所有权利。
+        </footer>
+        <!-- 控制栏 —— 点击"设置" -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- 创建选项卡 -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                <li class="active"><a href="/admin/#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                <li><a href="/admin/#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- 选项卡窗格 home 和 设置 -->
+            <div class="tab-content">
+                <!-- Home 标签内容 -->
+                <div class="tab-pane active" id="control-sidebar-home-tab">
+                    <h3 class="control-sidebar-heading">最近的活动</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="/admin/javascript:;">
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">雪婷的生日</h4>
+                                    <p>18 岁的生日在8月27号. </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+                    <h3 class="control-sidebar-heading">任务进展</h3>
+                    <ul class="control-sidebar-menu">
+                        <li>
+                            <a href="/admin/javascript:;">
+                                <h4 class="control-sidebar-subheading">
+                                        自定义模板设计
+                                    <span class="pull-right-container">
+                                        <span class="label label-danger pull-right">70%</span>
+                                    </span>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.control-sidebar-menu -->
+                </div>
+                <!-- /.tab-pane -->
+                <!-- 数据选项卡内容 -->
+                <div class="tab-pane" id="control-sidebar-stats-tab">数据选项卡内容</div>
+                <!-- /.tab-pane -->
+                <!-- 设置选项卡内容 -->
+                <div class="tab-pane" id="control-sidebar-settings-tab">
+                    <form method="post">
+                        <h3 class="control-sidebar-heading">常规设置</h3>
+                        <div class="form-group">
+                            <label class="control-sidebar-subheading">
+                                报告面板的使用
+                                <input type="checkbox" class="pull-right" checked>
+                            </label>
+                            <p>
+                                一些关于这个一般设置选项的信息
+                            </p>
+                        </div>
+                        <!-- /.form-group -->
+                    </form>
+                </div>
+                <!-- /.tab-pane -->
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- 添加侧边栏的背景. 这个div标签必须放置在the control sidebar下面 -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/static/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/static/plugin/adminlte/js/adminlte.min.js"></script>
+    <script src="/admin/static/js/common.js"></script>
+    <script src="/admin/static/js/index.js"></script>
+    
+</body>
+
+</html>

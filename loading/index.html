@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/loading/css/fs_loading.css">
+    <link rel="stylesheet" href="/admin/loading/index.css">
+    <title>加载动画</title>
+</head>
+<body>
+    <div class="sProcessingDiv"></div>
+    <div style="position: fixed;">
+        <ul class="ul-loading">
+            <li><a href="./jsloading/jq.html">原生 JS</a></li>
+            <li><a href="./jsloading/jq2.html">加载gif 图片动画</a></li>
+            <li><a href="./jsloading/gif.html">gif 展示页面</a></li>
+            <li><a href="./page-loading-effects/index.html">别人的作品</a></li>
+        </ul>
+    </div>
+    <div id="testDemo" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    <div id="mydiv" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    <div id="mydiv2" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    <div id="mydiv3" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    <div id="mydiv4" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    <div id="mydiv5" style="width: 600px;margin: auto;margin-top: 50px;"></div>
+    
+    <div id="loading-demo">
+        <!-- <loading-demo v-if="loadingShow1"></loading-demo> -->
+        <loading-demo v-if="loadingShow2"></loading-demo>
+        <loading-demo2 v-show="loadingShow3"></loading-demo2>
+        <loading-demo3></loading-demo3>
+        <loading-demo4></loading-demo4>
+        <loading-demo5></loading-demo5>
+    </div>
+    
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/static/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/admin/static/plugin/vue/vue.min.js"></script>
+    <script src="/admin/loading/js/fs_loading_jq.js"></script>
+    <script src="/admin/loading/index.js"></script>
+    <script type="text/javascript">
+        var value = 0;
+        var time = 50;
+        var myProgress = $("#testDemo").fsLoading({type: "1", kind: "progress" })
+        //进度条复位函数
+        function reset() {
+            value = 0;
+            myProgress.progress(value);
+        }
+        // 改变进度条
+        function increment() {
+            value += 1;
+            if (value <=100) {
+                myProgress.progress(value);
+            } else {
+                setTimeout(reset,3000);
+                return; // 跳出 递归函数
+            }
+            setTimeout(increment,time); // 递归调用
+        }
+        // 触发启动
+        increment();
+    </script>
+    <script type="text/javascript">
+
+        var myProgress0 = $("#mydiv").fsLoading({type: "0", kind: "progress" });
+        myProgress0.progress(20);
+        var myProgress2 = $("#mydiv2").fsLoading({type: "2", kind: "progress" });
+        myProgress2.progress(50);
+        var myProgress3 = $("#mydiv3").fsLoading({type: "3", kind: "progress" });
+        myProgress3.progress(70);
+        var myProgress4 = $("#mydiv4").fsLoading({type: "5", kind: "progress" });
+        myProgress4.progress(90);
+        var myProgress5 = $("#mydiv5").fsLoading({type: "1", kind: "progress" });
+        myProgress5.progress(100);
+        // // $('.progress-bar').css("width",value + "%")
+        // 返回的控件 -- 隐藏
+        // myProgress5.progressCtr.hide();
+    </script>
+    <script type="text/javascript">
+
+    // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+
+        $("#loading", parent.document).height(setHeightVal);
+    });
+    </script>
+</html>

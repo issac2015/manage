@@ -1,0 +1,9 @@
+div {
+    width: 100%;
+}
+#btns div {
+    margin-top: 15px;
+}
+.fs-editor-ctrl {
+    margin-top: 15px;
+}

@@ -1,0 +1,64 @@
+[   
+    {
+        "type": "text",
+        "name": "customerName",
+        "labelName": "客户名称",
+        "placeholder": "请输入客户名称"
+    },
+    {
+        "type": "text",
+        "labelName": "纳税人识别号",
+        "name": "taxIdentificationNumber",
+        "placeholder": "请输入纳税人识别号"
+    },
+    {
+        "type": "a",
+        "id": "queryDatatabel",
+        "text": "搜索"
+    },
+    {
+        "type": "text",
+        "labelName": "社会信用代码",
+        "name": "creditCode",
+        "placeholder": "请输入社会信用代码"
+    },
+    {
+        "type": "text",
+        "labelName": "联系人姓名",
+        "name": "contactName",
+        "placeholder": "请输入联系人姓名"
+    },
+    {
+        "type": "ztree",
+        "name": "fsZtree",
+        "labelName": "所属区域",
+        "placeholder": "请选择所属区域"
+    },
+    {
+        "type": "laydate",
+        "name": "from",
+        "id": "from",
+        "labelName": "录入时间起",
+        "placeholder": "请选择录入时间"
+    },
+    {
+        "type": "laydate",
+        "id": "to",
+        "name": "to",
+        "labelName": "录入时间止",
+        "placeholder": "请选择录入时间"
+    },
+    {
+        "type": "select",
+        "id": "storeDepId",
+        "name": "storeDepId",
+        "labelName": "服务门店",
+        "placeholder": "请选择服务门店"
+    },
+    {
+        "type": "checkbox",
+        "name": "customerType1",
+        "radioOptions": ["付费用户", "试用用户", "潜在用户", "过期用户"],
+        "labelName": "用户类型"
+    }
+]

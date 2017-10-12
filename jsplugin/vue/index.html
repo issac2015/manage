@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/jsplugin/vue/css/currency_input.css">
+    <title>Currency Input</title>
+</head>
+<body>
+    <div id="app">
+        <currency-input label="Price" v-model="price"></currency-input>
+        <currency-input label="Shipping" v-model="shipping"></currency-input>
+        <currency-input label="Handling" v-model="handling"></currency-input>
+        <currency-input label="Discount" v-model="discount"></currency-input>
+        <currency-input label="实打实的" v-model="test"></currency-input>
+        <h4>Total: $ {{ total }}</h4>
+    </div>
+
+</body>
+    <script type="text/javascript" src="/admin/static/plugin/vue/vue.min.js"></script>
+
+    <script src="/admin/jsplugin/vue/js/currency_validator.js"></script>
+    <script type="text/javascript" src="/admin/jsplugin/vue/js/currency_input.js"></script>
+
+</html>

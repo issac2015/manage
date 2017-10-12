@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无权限访问</title>
+</head>
+    <style type="text/css">
+        html {
+            height: 100%;
+            /*background: wheat;*/
+        }
+        body {
+            height: 100%;
+        }
+        .fs-con {
+            width: 600px;
+            margin: auto;
+            margin-top: 120px;
+            text-align: center;
+            background: white;
+            position: relative;
+        }
+        .fs-con .fs-con-btn {
+            display: inline-block;
+            color: #fff;
+            background-color: #5bc0de;
+            border-color: #46b8da;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            width: 100px;
+        }
+    </style>
+<body>
+    <div class="fs-con">
+        <img src="img/error2.png">
+        <div>
+            <div style="font-size: 22px;">对不起，当前访问无效</div>
+            <div style="color: #d6d6d6;font-size: 22px;margin-top: 8px;">请尝试重新登录</div>
+            <!-- <div style="margin-top: 10px;">
+                <span class="fs-con-btn">返回首页</span>
+            </div> -->
+        </div>
+    </div>
+</body>
+    <!-- <script src="/admin/public/res/plugin/jquery/js/jquery.js?v=1.0"></script>
+    <script type="text/javascript">
+        // 设置 居中
+        var setLeft = $(window).width() - $(".fs-con").outerWidth();
+        var setTop = $(window).height() - $(".fs-con").outerHeight(); 
+        $(".fs-con").css({ left: setLeft/2, top: setTop/2 });
+    </script> -->
+</html>

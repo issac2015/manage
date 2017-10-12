@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label for</title>
+    <link rel="stylesheet" href="/admin/static/plugin/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/admin/static/plugin/font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        .form-group {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        .form-group label {
+            font-size: 22px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .form-group input {
+            cursor: pointer;
+        }
+        .btn-default i {
+            color: #333!important;
+        }
+    </style>
+</head>
+<body>
+    <h3>使用 label for 绑定 input file，将input file 隐藏 或移到页面看不到的地方。</h3>
+    <div class="form-group">
+        <label for="exampleInputFile">点击label中的文字也能实现上传</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">通过改变 label 的样式，就可以实现任何上传组件的样式。</p>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile">上传文件</label>
+        <label class="btn btn-primary" for="exampleInputFile">上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile">上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile">上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile">上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile">上传文件</label>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile">
+            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            <span>上传文件</span>
+        </label>
+        <label class="btn btn-primary" for="exampleInputFile"><i class="fa fa-upload" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile"><i class="fa fa-paw" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile"><i class="fa fa-share" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile"><i class="fa fa-life-ring" aria-hidden="true"></i>上传文件</label>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile"><i class="fa fa-tencent-weibo" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-primary" for="exampleInputFile"><i class="fa fa-codiepie" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile"><i class="fa fa-at" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile"><i class="fa fa-bookmark-o" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile"><i class="fa fa-database" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile"><i class="fa fa-diamond" aria-hidden="true"></i>上传文件</label>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile"><i class="fa fa-envelope" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-primary" for="exampleInputFile"><i class="fa fa-folder" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile"><i class="fa fa-info-circle" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile"><i class="fa fa-leaf" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile"><i class="fa fa-share-square" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile"><i class="fa fa-share-square-o" aria-hidden="true"></i>上传文件</label>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile"><i class="fa fa-sign-in" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-primary" for="exampleInputFile"><i class="fa fa-tasks" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile"><i class="fa fa-hand-o-right" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile"><i class="fa fa-rocket" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile"><i class="fa fa-file" aria-hidden="true"></i>上传文件</label>
+    </div>
+    <div style="margin-top: 40px;margin-left: 20px;">
+        <label class="btn btn-default" for="exampleInputFile"><i class="fa fa-file-archive-o" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-primary" for="exampleInputFile"><i class="fa fa-clipboard" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-success" for="exampleInputFile"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-info" for="exampleInputFile"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-warning" for="exampleInputFile"><i class="fa fa-hand-o-up" aria-hidden="true"></i>上传文件</label>
+        <label class="btn btn-danger" for="exampleInputFile"><i class="fa fa-share-alt" aria-hidden="true"></i>上传文件</label>
+    </div>
+</body>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="/admin/static/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/webplugin/fs_upload/upload.js"></script>
+    <script src="/admin/webplugin/fs_upload/js/fs_upload.js"></script>
+    <script type="text/javascript">
+    // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+
+        $("#fsUpload", parent.document).height(setHeightVal);
+    });
+    </script>
+</html>
+

@@ -1,0 +1,14 @@
+{
+    "treeview": {
+        "icon": "fa fa-puzzle-piece",
+        "span": "备忘录"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-spinner",
+            "span": "笔记本软件记录",
+            "id": "memo",
+            "url": "/admin/memo/software/index.html"
+        }
+    ]
+}

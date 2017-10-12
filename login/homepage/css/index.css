@@ -1,0 +1,32 @@
+html { width: 100%; height: 100%; }
+body { width: 100%; height: 100%; position: relative; background: url(../img/backgroundImg.png) no-repeat center center; overflow: hidden; }
+.login-interface { position: absolute; width: 1000px; left: 50%; top: 50%; margin-left: -500px; margin-top: -215px; }
+.login-left { float: left; }
+.login-right { float: right; width: 362px; height: 370px; background: url(../img/login_r.png) no-repeat; margin-top: 20px; }
+.fs-form-container { width: 282px; margin: auto; padding-top: 52px;    /*background-color: rgba(0, 0, 0, 0.17);*/ }
+
+/* 输入框 */
+.input-div { position: relative; border: 1px solid #efefef;    /* text-indent: 40px; */ border-radius: 4px; height: 36px; }
+.input-div-span { position: absolute; font-size: 14px; font-weight: normal; left: 40px; top: 10px; color: #fff; }
+.input-div-img { margin-left: 6px; margin-top: 6px; }
+.input-div input { position: absolute; width: 245px; background-color: transparent; top: 0px; left: 36px; height: 36px; border: 0px; border-radius: 0px 4px 4px 0px; padding: 0px; outline: none; }
+.input-div-top { margin-top: 55px; }
+
+/* checkbox 按钮 */
+.check-div { margin-top: 16px; }
+.check-div span { color: #fff; font-size: 14px; }
+.check-div .check { position: relative; top: 2px; }
+.check-div-left { float: left; }
+.check-div-right { float: right; }
+.fs-login-btn { width: 282px; height: 34px; background: #79c454; border: none; border-radius: 4px; color: #fff; cursor: pointer; transition: all .6s; text-align: center; line-height: 34px; margin-top: 18px; margin-bottom: 12px; }
+
+/* 登录界面瞄点 */
+.login-link-left { color: #fff; float: left; text-decoration: none; }
+.login-link-right { color: #fff; float: right; text-decoration: none; }
+.clrear-flaot { clear: both; height: 0; line-height: 0; font-size: 0; }
+
+/* loading 登录加载动画 */
+.fs-loading .fs-load { bottom: 0px; top: 0px; }
+.fs-loading .fs-cover-layer { opacity: 0.15; }
+
+

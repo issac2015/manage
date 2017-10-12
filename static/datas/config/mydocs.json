@@ -1,0 +1,79 @@
+{
+    "treeview": {
+        "icon": "fa fa-puzzle-piece",
+        "span": "我的文档"
+    },
+    "menus": [
+        {
+            "icon": "fa fa-spinner",
+            "span": "es6语法教程",
+            "tooltip": "",
+            "id": "es6tutorial",
+            "url": "/admin/mydocs/es6tutorial/index.html"
+        },
+        {
+            "icon": "fa fa-cloud-upload",
+            "span": "我的技术文档",
+            "tooltip": "我的技术文档",
+            "id": "mydocs",
+            "url": "/admin/mydocs/mydocs/index.html"
+        },
+        {
+            "icon": "fa fa-cloud-upload",
+            "span": "selenium",
+            "id": "selenium",
+            "url": "/admin/mydocs/selenium/index.html"
+        },
+        {
+            "icon": "fa fa-bookmark-o",
+            "span": "Vue.js 1.0文档",
+            "id": "v1_cn_vuejs",
+            "url": "/admin/mydocs/v1_cn_vuejs/index.html"
+        },
+        {
+            "icon": "fa fa-connectdevelop",
+            "span": "Vue.js 2.0文档",
+            "id": "v2_cn_vuejs",
+            "url": "/admin/mydocs/v2_cn_vuejs/index.html"
+        },
+        {
+            "icon": "fa fa-user-circle",
+            "span": "wekan--看板",
+            "id": "wekan",
+            "url": "/admin/mydocs/wekan/index.html"
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "JavaScript权威指南code"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "JavaScript Loan Calculator",
+                    "tooltip": "",
+                    "id": "js_authority_loancalc",
+                    "url": "/admin/mydocs/JavaScript_authority/01.01.loancalc.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "Analog Clock",
+                    "id": "js_authority_clock",
+                    "url": "/admin/mydocs/JavaScript_authority/21.03.clock.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "猜数字游戏",
+                    "id": "js_authority_guessinggame",
+                    "url": "/admin/mydocs/JavaScript_authority/22.03.guessinggame.html"
+                },
+                {
+                    "icon": "fa fa-database",
+                    "span": "文件读取",
+                    "id": "js_authority_FileReader",
+                    "url": "/admin/mydocs/JavaScript_authority/22.11.FileReader.html"
+                }
+            ]
+        }
+    ]
+}
