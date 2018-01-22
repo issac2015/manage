@@ -34,6 +34,36 @@
         {
             "treeview": {
                 "icon": "fa fa-grav",
+                "span": "js原生API",
+                "tooltip": "兼容低版本IE处理"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "版本检测",
+                    "id": "fsJSAPI",
+                    "url": "/admin/code/jsNativeAPI/index.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "JavaScript_authority",
+                "tooltip": ""
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "TOC 目录",
+                    "id": "fsCodeTOC",
+                    "url": "/admin/code/JavaScript_authority/TOC/index.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
                 "span": "IE9 以下"
             },
             "menus": [

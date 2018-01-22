@@ -14,7 +14,7 @@ fsUpload = {
             id: "fsFile", // 使用 label for 来绑定 input file(id)
             class: "fs-upload",
             name: "thumbnail",
-            url: "/api/fileUpload",
+            url: "http://localhost:3000/api/uploadFiles/excel",
             method: "post", // post or get
             success: function(res) {
 
@@ -47,7 +47,7 @@ fsUpload = {
         $("body").append(formElem);
         // <input type="file"
         $('#'+fsUpload.data.opts.id).off('change').on('change', function() {
-            $('#'+fsUpload.data.opts.id).parent().submit();
+            // $('#'+fsUpload.data.opts.id).parent().submit();
         });
     }
 }
