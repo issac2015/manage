@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta name="description" content="Sly.js滚动条插件支持图片自动轮播、按钮控制、增删元素等。" />
+    <title>Sly.js水平和垂直滚动条播放进度</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="content">
+        <div id="sections" class="container">
+            <div class="scrollbox" id="horizontal">
+                <div class="slyWrap example1">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragContent": 1, "startAt": 3, "scrollBy": 1 }'>
+                        <ul class="big cfix">
+                            <li><img src="images/01.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/02.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/03.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/04.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/05.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/06.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/07.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/08.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/09.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/10.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/11.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/12.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/13.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/14.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/15.jpg" width="187" height="170" alt="女装" /></li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart" data-arg="10"><strong>10</strong> 开始</button>
+                            <button class="btn" data-action="toCenter" data-arg="10"><strong>10</strong> 到中间</button>
+                            <button class="btn" data-action="toEnd" data-arg="10"><strong>10</strong> 到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: "basic",
+    dragContent: 1,
+    startAt: 3,
+    scrollBy: 1
+});
+                    </pre>
+                </div>
+                <!--example1 end-->
+                <hr>
+                <div class="slyWrap example1">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "smart", "dragContent": 1, "startAt": 3, "scrollBy": 1 }'>
+                        <ul class="big cfix">
+                            <li><img src="images/01.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/02.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/03.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/04.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/05.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/06.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/07.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/08.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/09.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/10.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/11.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/12.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/13.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/14.jpg" width="187" height="170" alt="女装" /></li>
+                            <li><img src="images/15.jpg" width="187" height="170" alt="女装" /></li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart" data-arg="10"><strong>10</strong> 开始</button>
+                            <button class="btn" data-action="toCenter" data-arg="10"><strong>10</strong> 到中间</button>
+                            <button class="btn" data-action="toEnd" data-arg="10"><strong>10</strong> 到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+<pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: "smart",
+    dragContent: 1,
+    startAt: 3,
+    scrollBy: 1
+});
+</pre>
+                </div>
+                <!--example1 end-->
+                <hr>
+                <div class="slyWrap example2">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "centered", "dragContent": 1, "scrollBy": 1 }'>
+                        <ul class="big cfix">
+                            <li><img src="bjb/01.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/02.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/03.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/04.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/05.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/06.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/07.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/08.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/09.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/10.jpg" width="220" height="220" /></li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toCenter" data-arg="5"><strong>5</strong> 到中间</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: "centered",
+    dragContent: 1,
+    scrollBy: 1
+});
+</pre>
+                </div>
+                <hr>
+                <div class="slyWrap example2">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "forceCentered", "dragContent": 1, "scrollBy": 1, "easing": "easeOutBack" }'>
+                        <ul class="big cfix">
+                            <li><img src="bjb/01.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/02.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/03.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/04.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/05.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/06.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/07.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/08.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/09.jpg" width="220" height="220" /></li>
+                            <li><img src="bjb/10.jpg" width="220" height="220" /></li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toCenter" data-arg="5"><strong>5</strong> 到中间</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: "forceCentered",
+    dragContent: 1,
+    scrollBy: 1,
+    easing: "easeOutBack" // with jQuery easing v1.3
+});
+</pre>
+                </div>
+                <hr>
+                <div class="slyWrap example3">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "basic", "dragContent": 1, "scrollBy": 1, "cycleBy": "pages", "cycleInterval": 1000, "startPaused": 1, "pauseOnHover": 1 }'>
+                        <ul class="big cfix">
+                            <li><img src="pic/01.jpg" width="465" height="200" alt="风景" /></li>
+                            <li><img src="pic/02.jpg" width="465" height="200" alt="风景" /></li>
+                            <li><img src="pic/03.jpg" width="465" height="200" alt="美食" /></li>
+                            <li><img src="pic/04.jpg" width="465" height="200" alt="美食" /></li>
+                            <li><img src="pic/01.jpg" width="465" height="200" alt="风景" /></li>
+                            <li><img src="pic/02.jpg" width="465" height="200" alt="风景" /></li>
+                            <li><img src="pic/03.jpg" width="465" height="200" alt="美食" /></li>
+                            <li><img src="pic/04.jpg" width="465" height="200" alt="美食" /></li>
+                            <li><img src="pic/02.jpg" width="465" height="200" alt="风景" /></li>
+                            <li><img src="pic/03.jpg" width="465" height="200" alt="美食" /></li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-green" data-action="cycle">循环</button>
+                            <button class="btn btn-green " data-action="pause">暂停</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart" data-arg="5"><strong>5</strong> 开始</button>
+                            <button class="btn" data-action="toCenter" data-arg="5"><strong>5</strong> 到中间</button>
+                            <button class="btn" data-action="toEnd" data-arg="5"><strong>5</strong> 到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: "basic",
+    dragContent: 1,
+    scrollBy: 1,
+    cycleBy: 'pages',
+    cycleInterval: 1000,
+    startPaused: 1
+});
+</pre>
+                </div>
+                <hr>
+                <div class="slyWrap example4">
+                    <div class="sly" data-options='{ "horizontal": 1, "itemNav": "forceCentered", "cycleBy": "items", "cycleInterval": 2000 }'>
+                        <ul class="big cfix">
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/images/cj/2012-03-14/420.html">js图片滚动</a></h3>
+                                <p>js图片切换特效制作js焦点图slider上下滚动切换带序列按钮控制图片滚动。内含js代码下载。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/images/more/2012-05-15/608.html">js lazyload延迟加载</a></h3>
+                                <p>js图片特效随着浏览器滚动条滚动网页图片延迟加载，可控制页面某一位置图片是否开始加载。js代码。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/letter/qh/2012-03-18/438.html">js文字特效</a></h3>
+                                <p>js文字特效制作js文字切换效果让焦点文字带滤镜效果切换滚动，内含js代码下载。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/letter/gd/2012-03-18/434.html">js文字滚动</a></h3>
+                                <p>js文字滚动插件制作一个js文字滚动效果，两排双行关联向上文字间隙滚动,支持多组文字滚动列表。内含js代码下载。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/form/qxfx/2012-03-25/500.html">js表单验证</a></h3>
+                                <p>js特效制作js checkbox复选框全选 反选 取消全部等设置多个表单里面的checkbox复选框勾选特效。内含js代码下载。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/table/px/2012-03-19/444.html">js表格</a></h3>
+                                <p>js表格特效制作一个js表格排序筛选，点击表格标题，子内容按大小、字母先后顺序排列。内含js代码下载。</p>
+                            </li>
+                            <li>
+                                <h3><a href="http://www.sucaihuo.com/js/letter/ss/2012-03-18/436.html">js文字闪烁</a></h3>
+                                <p>js文字特效制作一个js文字闪烁效果，文字间隙颜色变化红、黄、蓝闪烁过程。内含js代码下载</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn btn-green" data-action="cycle">循环</button>
+                            <button class="btn btn-green " data-action="pause">暂停</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    horizontal: 1,
+    itemNav: 'forceCentered',
+    cycleBy: 'items',
+    cycleInterval: 2000
+});
+</pre>
+                </div>
+            </div>
+            <!--horizontal end-->
+            <hr>
+            <div id="vertical" class="scrollbox clearfix">
+                <div class="slyWrap example1">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "itemNav": "smart", "dragContent": 1, "startAt": 10, "scrollBy": 1, "elasticBounds": 1 }'>
+                        <ul class="big cfix" data-items="30">
+                        </ul>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prev">&laquo; 上一个</button>
+                            <button class="btn next">下一个 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="add">添加列表</button>
+                            <button class="btn" data-action="remove">移除列表</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    itemNav: "smart",
+    dragContent: 1,
+    startAt: 10,
+    scrollBy: 1,
+    elasticBounds: 1
+});
+</pre>
+                </div>
+                <div class="slyWrap example2" style="float:right;">
+                    <div class="scrollbar">
+                        <div class="handle"></div>
+                    </div>
+                    <div class="sly" data-options='{ "scrollBy": 100, "startAt": 200 }'>
+                        <div>
+                            <h1>Lorem ipsum dolor</h1>
+                            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.<em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tinciduntcondimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+                            <h2>Header Level 2</h2>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                                <li>Aliquam tincidunt mauris eu risus.</li>
+                            </ol>
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue.Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus,at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+                            </blockquote>
+                            <h3>Header Level 3</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                                <li>Aliquam tincidunt mauris eu risus.</li>
+                            </ul>
+                            <pre>
+#header h1 a {
+    display: block;
+    width: 300px;
+    height: 80px;
+}
+</pre>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h4>Header Level 4</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <ul class="pages"></ul>
+                    <div class="controls btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn prevPage">&laquo; 上一页</button>
+                            <button class="btn nextPage">下一页 &raquo;</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart">开始</button>
+                            <button class="btn" data-action="toCenter">到中间</button>
+                            <button class="btn" data-action="toEnd">到底</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-action="toStart" data-arg="h3"><strong>H3</strong> 开始</button>
+                            <button class="btn" data-action="toCenter" data-arg="h3"><strong>H3</strong> 到中间</button>
+                            <button class="btn" data-action="toEnd" data-arg="h3"><strong>H3</strong> 到底</button>
+                        </div>
+                    </div>
+                    <pre class="prettyprint">
+$frame.sly({
+    scrollBy: 100,
+    startAt: 100
+});
+</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/admin/static/plugin/jquery/jquery.min.js"></script>
+    <script src="js/jquery.sly.js"></script>
+    <script type="text/javascript" src="js/jquery.easing-1.3.min.js"></script>
+    <script type="text/javascript">
+    $(function($) {
+
+        // 占位符项目来填充列表的功能
+        function populate(container, count, offset) {
+            var output = '';
+            offset = isNaN(offset) ? 0 : offset;
+            for (var i = 0; i < count; i++) {
+                output += '<li>' + (offset + i) + '</li>';
+            }
+            return $(output).appendTo(container);
+        }
+
+        // 填充列表项
+        $('ul[data-items]').each(function(i, e) {
+            var items = parseInt($(e).data('items'), 10);
+            populate(e, items);
+        });
+
+        // 主要调用部分
+        $(document).on('activated', function(event) {
+            var $section = $(".scrollbox");
+            var $frame = $section.find('.frame'),
+                $ul = $frame.find('ul').eq(0),
+                $scrollbar = $section.find('.scrollbar'),
+                $buttons = $section.find('.controlbar [data-action]');
+
+            populate($ul, 10);
+
+            // 控制
+            $buttons.on('click', function(e) {
+                var action = $(this).data('action');
+                switch (action) {
+                    case 'reset':
+                        $frame.sly('toStart');
+                        setTimeout(function() {
+                            $ul.find('li').slice(10).remove();
+                            $frame.sly('reload');
+                        }, 200);
+                        break;
+                    default:
+                        $frame.sly(action);
+                }
+            });
+
+            $section.find(".slyWrap").each(function(i, e) {
+                var cont = $(this),
+                    frame = cont.find(".sly"),
+                    slidee = frame.find("ul"),
+                    scrollbar = cont.find(".scrollbar"),
+                    pagesbar = cont.find(".pages"),
+                    options = frame.data("options"),
+                    controls = cont.find(".controls"),
+                    prevButton = controls.find(".prev"),
+                    nextButton = controls.find(".next"),
+                    prevPageButton = controls.find(".prevPage"),
+                    nextPageButton = controls.find(".nextPage");
+
+                options = $.extend({}, options, {
+                    scrollBar: scrollbar,
+                    pagesBar: pagesbar,
+                    prev: prevButton,
+                    next: nextButton,
+                    prevPage: prevPageButton,
+                    nextPage: nextPageButton,
+                    disabledClass: 'btn-disabled'
+                });
+
+                frame.sly(options);
+
+                cont.find("button").click(function() {
+                    var action = $(this).data('action'),
+                        arg = $(this).data('arg');
+                    switch (action) {
+                        case 'add':
+                            slidee.append(slidee.children().slice(-1).clone().removeClass().text(function(i, text) {
+                                return text / 1 + 1;
+                            }));
+                            frame.sly('reload');
+                            break;
+                        case 'remove':
+                            slidee.find("li").slice(-1).remove();
+                            frame.sly('reload');
+                            break;
+                        default:
+                            frame.sly(action, arg);
+                    }
+                });
+
+            });
+
+        }).trigger('activated');
+
+    });
+    </script>
+</body>
+    <script type="text/javascript">
+
+    // 动态设置 iframe 内嵌的高度
+    $(document).ready(function () {
+        var setHeightVal = 600; // 默认最小高度 600px;
+
+        var footerHeight = $(".main-footer", parent.document).outerHeight(); // 51 px; -- number; jq height() 获取的不是实际高度
+        var headerHeight = $(".main-header", parent.document).outerHeight(); // 50 px;
+        var contentHeaderH = $(".content-header", parent.document).outerHeight(); // 41px; content-header
+        var iframeContent = 30 + 15; // 外高度
+        var scrollTop = parent.document.documentElement.scrollHeight || parent.document.body.scrollHeight;
+        // <section id="fsIframe" class="content container-fluid"> 在当前环境中的实际高度
+        var verify = scrollTop - (footerHeight + headerHeight + contentHeaderH) - iframeContent;
+        // 内嵌页面的 document height
+        var docHeight = $(document).height() + 30;
+        // console.log(docHeight);
+        // 内嵌页面的 html height
+        var htmlHeight = $("html").height() + 30;
+        // console.log(htmlHeight);
+        // 内嵌页面的 body height
+        var bodyHeight = $("body").height() + 30;
+        // console.log(bodyHeight);
+        if (verify > docHeight) {
+            setHeightVal = verify;
+        } else if (htmlHeight > verify) {
+            setHeightVal = htmlHeight;
+        } else {
+            setHeightVal = docHeight;
+        }
+
+        $("#fsSly", parent.document).height(setHeightVal);
+    });
+    </script>
+</html>
+<!-- 以下是统计及其他信息，与演示无关，不必理会 -->
+<!-- <p class="vad">
+    <a href="http://www.sucaihuo.com/" target="_blank">sucaihuo.com</a>
+    <a href="http://www.sucaihuo.com/js/833.html" target="_blank">说 明</a>
+    <a href="http://www.sucaihuo.com/js/833.html" target="_blank">下 载</a>
+</p> -->
+<style type="text/css">
+.vad {
+    margin: 120px 0 5px;
+    font-family: Consolas, arial, 宋体, sans-serif;
+    text-align: center;
+}
+
+.vad a {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 5px;
+    padding: 0 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    background-color: #222;
+}
+
+.vad a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.thead {
+    width: 728px;
+    height: 90px;
+    margin: 0 auto;
+    border-bottom: 40px solid #fff;
+}
+</style>

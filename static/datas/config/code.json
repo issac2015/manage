@@ -8,6 +8,12 @@
         {
             "icon": "fa fa-code",
             "span": "相关代码",
+            "id": "fsTest",
+            "url": "/admin/code/test/index.html"
+        },
+        {
+            "icon": "fa fa-code",
+            "span": "相关代码",
             "id": "codeTheme",
             "url": "/admin/code/theme.html"
         },
@@ -26,10 +32,60 @@
             ]
         },
         {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "封装的代码"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "轮播图",
+                    "id": "fsBanner_123",
+                    "url": "/admin/code/轮播图/index.html"
+                },
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "分页",
+                    "id": "fsPaging_123",
+                    "url": "/admin/code/分页/index.html"
+                }
+            ]
+        },
+        {
             "icon": "fa fa-code",
             "span": "iframe",
             "id": "code_iframe",
             "url": "/admin/code/iframe/iframe1.html"
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "js原生API",
+                "tooltip": "兼容低版本IE处理"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "版本检测",
+                    "id": "fsJSAPI",
+                    "url": "/admin/code/jsNativeAPI/index.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "JavaScript_authority",
+                "tooltip": ""
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "TOC 目录",
+                    "id": "fsCodeTOC",
+                    "url": "/admin/code/JavaScript_authority/TOC/index.html"
+                }
+            ]
         },
         {
             "treeview": {

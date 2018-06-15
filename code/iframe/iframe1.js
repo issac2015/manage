@@ -30,4 +30,12 @@ function iframe1_fun() {
 }
 
 
+$(document).ready(function() {
+    fsIframe2Win = window["fs_iframe2"];
+    console.log(fsIframe2Win);
+    console.log(fsIframe2Win.document);
+    var iframe2_h1 = $(fsIframe2Win.document).find("#iframe2_h1");
+    console.log(iframe2_h1);
+    $(iframe2_h1).css("color", "red");
 
+});

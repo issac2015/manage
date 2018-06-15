@@ -83,6 +83,12 @@
             ]
         },
         {
+            "icon": "fa fa-table",
+            "span": "jquery.js",
+            "id": "fsJQuery",
+            "url": "/admin/jsplugin/jquery/index.html"
+        },
+        {
             "treeview": {
                 "icon": "fa fa-database",
                 "span": "vue.js"

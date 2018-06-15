@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $("#input-44").fileinput({
         language: 'zh',
-        uploadUrl: '/api/fileUpload'
+        uploadUrl: 'http://localhost:3000/api/uploadFiles/excel'
         // maxFilePreviewSize: 10240
     });
 });
