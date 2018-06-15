@@ -8,6 +8,12 @@
         {
             "icon": "fa fa-code",
             "span": "相关代码",
+            "id": "fsTest",
+            "url": "/admin/code/test/index.html"
+        },
+        {
+            "icon": "fa fa-code",
+            "span": "相关代码",
             "id": "codeTheme",
             "url": "/admin/code/theme.html"
         },
@@ -22,6 +28,26 @@
                     "span": "postMessage",
                     "id": "html5_postMessage",
                     "url": "/admin/code/HTML5/postMessage/postMessage.html"
+                }
+            ]
+        },
+        {
+            "treeview": {
+                "icon": "fa fa-grav",
+                "span": "封装的代码"
+            },
+            "menus": [
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "轮播图",
+                    "id": "fsBanner_123",
+                    "url": "/admin/code/轮播图/index.html"
+                },
+                {
+                    "icon": "fa fa-anchor",
+                    "span": "分页",
+                    "id": "fsPaging_123",
+                    "url": "/admin/code/分页/index.html"
                 }
             ]
         },

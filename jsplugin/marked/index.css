@@ -7,18 +7,17 @@
     font-size: 20px;
     margin-bottom: 30px;
 }
-#md, #html {
+#html {
     min-height: 510px;
     height: 100%;
-}
-#md {
-    resize: none;
-}
-#html {
     border: solid 1px darkgrey;
     border-radius: 5px;
 }
-
+#md {
+    resize: none;
+    min-height: 510px;
+    height: 100%;
+}
 
 
 .container {

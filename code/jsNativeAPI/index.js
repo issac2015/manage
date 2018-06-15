@@ -98,13 +98,13 @@ function autoUploadFiles() {
 }
 
 // 兼容 IE 的 事件处理程序注册代码
-var b = document.getElementById("mybutton");
-var handler = function() { alert("测试"); };
-if (b.addEventListener) {
-    b.addEventListener("click", handler, false);
-} else {
-    b.attachEvent("onclick", handler);
-}
+// var b = document.getElementById("mybutton");
+// var handler = function() { alert("测试"); };
+// if (b.addEventListener) {
+//     b.addEventListener("click", handler, false);
+// } else {
+//     b.attachEvent("onclick", handler);
+// }
 
 // 使用 attachEvent() 注册的处理程序作为函数调用时，它们的 this值 是全局（Window）对象。
 // 可以用 如下代码来 解决这个问题。
