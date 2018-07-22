@@ -1,6 +1,7 @@
 {
-    "sidebarCollapse": true,
+    "sidebarCollapse": false,
     "contentHeaderVisible": true,
+    "isShowPagePath": true,
     "contentHeader": "My Admin",
     "contentHeaderSmall": "爱生活，爱运动"
 }

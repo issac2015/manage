@@ -113,6 +113,9 @@ iframe.active { display: block; }
 .content-wrapper {
     background-color: white;
 }
+.content-wrapper .content-header #conHeaderSpanPath{
+    font-size: 12px;
+}
 #fsIframe {
     padding-bottom: 0px;
 }
@@ -121,5 +124,6 @@ iframe.active { display: block; }
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 
 /* 修改总页面样式 end */

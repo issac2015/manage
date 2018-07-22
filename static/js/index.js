@@ -146,6 +146,8 @@ var index = {
             if (!res.contentHeaderVisible) {
                 $(".content-header").hide();
             }
+            _fs.baseConfig = res;
+            sessionStorage.setItem('baseConfig', JSON.stringify(res));
         });
     },
     /*
@@ -331,6 +333,8 @@ var index = {
 
                     // 设置 content header h1 span 的值
                     $("#conHeaderSpan").html($.trim(window.frames[iframeID].window.document.title));
+                    $("#conHeaderSpanPath").html(iframeSrc);
+                    $("#conHeaderSpanPath").attr("href", iframeSrc);
                 }, 300);
                 // 设置 iframe 高度
                 that.setIframeHeight($('iframe[src="'+iframeSrc+'"]')[0]);

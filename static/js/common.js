@@ -10,7 +10,6 @@ var common = {
      *  {data JSON对象数据的封装}
      * **/
     data: {
-
     },
     /**
      *  {init 初始化}
@@ -20,13 +19,11 @@ var common = {
          *  {initEvent 初始化事件}
          * **/
         initEvent: function() {
-
         },
         /**
          *  {initData 初始化数据}
          * **/
         initData: function() {
-
         }
     },
     /*
@@ -109,6 +106,7 @@ var common = {
     }
 }
 
+window._fs = {};
 
 $(document).ready(function() {
     // common.init.initData();
