@@ -18,6 +18,12 @@
             "url": "/admin/code/theme.html"
         },
         {
+            "icon": "fa fa-code",
+            "span": "vue-webpack 单页面应用(SPA)",
+            "id": "vueWebpackSPA",
+            "url": "/admin/single_page/index.html"
+        },
+        {
             "treeview": {
                 "icon": "fa fa-grav",
                 "span": "HTML5"
