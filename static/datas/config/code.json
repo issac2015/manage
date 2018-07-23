@@ -18,6 +18,12 @@
             "url": "/admin/code/theme.html"
         },
         {
+            "icon": "fa fa-code",
+            "span": "js 计算",
+            "id": "jsCalculate",
+            "url": "/admin/code/jsCalculate/index.html"
+        },
+        {
             "treeview": {
                 "icon": "fa fa-grav",
                 "span": "HTML5"
